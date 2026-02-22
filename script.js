@@ -7,10 +7,12 @@ for (let i = 0; i < 256; i++) {
     squareDiv.classList.add("square-div");
     content.appendChild(squareDiv);
     squareDiv.style.width = "6.25%";
+    let opacity = 0;
     squareDiv.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-    });
-}
+    event.target.style.backgroundColor = "#333333";
+    opacity = opacity + 0.1;
+    event.target.style.opacity = opacity;
+})}
 
 const squareDiv = document.querySelector(".square-div");
 
@@ -25,14 +27,13 @@ function getUserChoice() {
     }
     console.log(choice)
     const result = choice * choice;
-    console.log(result);
     for (let i = 0; i < result; i++) {
     const squareDiv = document.createElement("div");
     squareDiv.classList.add("square-div");
     content.appendChild(squareDiv);
     squareDiv.style.width = 100 / choice+"%";
     squareDiv.addEventListener("mouseover", (event) => {
-    event.target.style.backgroundColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+    event.target.style.backgroundColor = `#333333`;
     });
     }
 }
