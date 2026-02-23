@@ -1,25 +1,109 @@
 * {
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #333333;
+    --red-color: #FF0000;
+    --green-color: #008000;
+    --bg-white: #ffffff;
+    --text-color: #ffffff;
+    --yellow-color: #FFFF00;
+    --blue-color: #0000FF;
+    --orange-color: #FFA500;
+    --soft-pink: #FFB6C1;
+    --sky-blue: #AED9E0;
+    --mint-green: #B9FBC0;
+    --light-purple: #E0BBE4;
+    --pale-yellow: #FAF3DD;
+}
 #container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    gap: 10px;
 }
-.content {
+.content-grid {
     display: flex;
     flex-wrap: wrap;
-    min-width: 960px;
-    min-height: 960px;
-    border: 1px solid black;
+    width: 600px; 
+    height: 600px;
+    border: 7px solid rgb(203, 219, 57);
+
 }
 
-.square-div {
-    aspect-ratio: 1 / 1;
-}
 
-.button-div {
+.controls {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
+}
+.control-btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.green-button {
+    background-color: var(--green-color);
+    color: var(--text-color);
+}
+
+.red-button {
+    background-color: var(--red-color);
+    color: var(--text-color);
+}
+
+.default-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+.yellow-button {
+    background-color: var(--yellow-color);
+    color: var(--text-color);
+}
+
+.blue-button {
+    background-color: var(--blue-color);
+    color: var(--text-color);
+}
+
+.orange-button {
+    background-color: var(--orange-color);
+    color: var(--text-color);
+}
+
+.soft-pink-button {
+    background-color: var(--soft-pink);
+    color: var(--text-color);
+}
+
+.sky-blue-button {
+    background-color: var(--sky-blue);
+    color: var(--text-color);
+}
+
+.mint-green-button {
+    background-color: var(--mint-green);
+    color: var(--text-color);
+}
+
+.light-purple-button {
+    background-color: var(--light-purple);
+    color: var(--text-color);
+}
+
+.pale-yellow-button {
+    background-color: var(--pale-yellow);
+    color: var(--text-color);
+}
+
+
+.eraser, .reset {
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
